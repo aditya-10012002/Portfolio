@@ -1,0 +1,1 @@
+export { logos as images } from './images';
