@@ -36,6 +36,7 @@ import about004 from '../assets/about004.jpeg';
 import about005 from '../assets/about005.png';
 
 import profile from '../assets/profile.png';
+import profileAbout from '../assets/profileAbout.jpg';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -84,6 +85,7 @@ export const logos = {
     about004,
     about005,
     profile,
+    profileAbout,
     circle,
     logo,
     adidas,

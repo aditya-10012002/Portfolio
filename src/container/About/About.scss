@@ -1,42 +1,102 @@
 .app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__about-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 50rem;
+  background-color: var(--primary-color);
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgb(197, 197, 197);
+  margin-bottom: 1rem;
+
+  .app__about-profile-pic {
     flex: 1;
-    width: 100%;
+    border-right: 1px solid rgb(223, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 1rem;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 702px) {
+      border-right: none;
+      border-bottom: 1px solid rgb(223, 223, 223);
+    }
+  }
+
+  .app__about-summary {
+    flex: 3;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    font-family: var(--font-base);
+    color: #000;
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: rgb(63, 63, 63);
+    }
+  }
+
+  @media screen and (max-width: 702px) {
     flex-direction: column;
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px rgb(180, 180, 180);
+  }
 }
 
 .app__profiles {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .app__profile-item {
-    width: 190px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 2rem;
+  width: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  // h2, p {
+  //     align-self: center;
+  // }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
 
     img {
-        width: 100%;
-        height: 170px;
-        border-radius: 15px;
-        object-fit: cover;
+      height: 320px;
     }
-
-    // h2, p {
-    //     align-self: center;
-    // }
-
-    @media screen and (min-width: 2000px) {
-        width: 370px;
-        margin: 2rem 4rem;
-        
-        img {
-            height: 320px;
-        }
-    }
+  }
 }

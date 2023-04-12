@@ -1,5 +1,6 @@
 // import { useState, useEffect } from "react";
 import "./About.scss";
+import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -16,10 +17,30 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        I know that <span>Good Dev</span>
-        <br /> means <span>Good Business</span>
-      </h2>
+      {/* <h2 className="head-text">
+          I know that <span>Good Dev</span>
+          <br /> means <span>Good Business</span>
+        </h2> */}
+      <div className="app__about-content">
+        <div className="app__about-profile-pic">
+          <img src={images.profileAbout} alt="Profile_bg" />
+        </div>
+        <div className="app__about-summary">
+          {/* <section className="app__about-summary"> */}
+          <h2 className="head-text">
+            About <span>Me</span>
+          </h2>
+          <p>
+            My name is Aditya Kumar Sharma and am 21 years old. I am currently
+            pursuing B.Tech from NIT Warangal India in Computer Science and
+            Engineering department from 2019 - 2023. <br></br>I have been a
+            basketball club member in my school time and was a member of a
+            Ethical hacking club named 'Cybsec' in my first year in college. I
+            like playing basketball, skateboarding and reading books.
+          </p>
+          {/* </section> */}
+        </div>
+      </div>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
