@@ -31,12 +31,11 @@ const About = () => {
             About <span>Me</span>
           </h2>
           <p>
-            My name is Aditya Kumar Sharma and am 21 years old. I am currently
-            pursuing B.Tech from NIT Warangal India in Computer Science and
-            Engineering department from 2019 - 2023. <br></br>I have been a
-            basketball club member in my school time and was a member of a
-            Ethical hacking club named 'Cybsec' in my first year in college. I
-            like playing basketball, skateboarding and reading books.
+            I’m Aditya Kumar Sharma, a Software Engineer at Wells Fargo and a B.Tech Computer Science graduate from NIT Warangal.
+            <br></br>
+            I enjoy building scalable systems, working across the full stack, and exploring AI-driven solutions that solve real-world problems.
+            <br></br>
+            Outside work, I enjoy learning new technologies, reading, and staying curious about intelligent systems and modern software design.
           </p>
           {/* </section> */}
         </div>
